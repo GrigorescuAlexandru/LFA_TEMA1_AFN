@@ -12,12 +12,12 @@ struct tranzitie
 
 /**
  *
- * @param cuvant reprezinta cuvantul pe care il vom verifica
- * @param stare reprezinta starea curenta in care se afla functia in apelul respectiv
- * @param numarDeTranzitii reprezinta numarul de tranzitii ale automatului
- * @param tranzitii reprezinta vectorul care contine toate tranzitiile automatului
- * @param numarStariObtinute reprezinta numarul de elemente ale vectorului de stari obtinute
- * @param stariObtinute reprezinta un vector in care vom depunde toate starile in care au luat sfarsit fiecare parcurgere
+ * @param cuvant:  cuvantul pe care il vom verifica
+ * @param stare:  starea curenta in care se afla functia in apelul respectiv
+ * @param numarDeTranzitii:  numarul de tranzitii ale automatului
+ * @param tranzitii:  vectorul care contine toate tranzitiile automatului
+ * @param numarStariObtinute:  numarul de elemente ale vectorului de stari obtinute
+ * @param stariObtinute:  un vector in care vom depunde toate starile in care au luat sfarsit fiecare parcurgere
  */
 void AFN(char cuvant[101], int stare, int numarDeTranzitii, tranzitie tranzitii[100], int &numarStariObtinute,
          int stariObtinute[100])
@@ -37,10 +37,10 @@ void AFN(char cuvant[101], int stare, int numarDeTranzitii, tranzitie tranzitii[
 
 /**
  *
- * @param stare reprezinta starea pe care o vom verifica
- * @param stariFinale reprezinta vectorul de stari finale
- * @param numarStariFinale reprezinta numarul de elemente al vectorului de stari finale
- * @return functia va returna 1 daca "stare" este stare finala, altfel va returna 0
+ * @param stare:  starea pe care o vom verifica
+ * @param stariFinale:  vectorul de stari finale
+ * @param numarStariFinale:  numarul de elemente al vectorului de stari finale
+ * @return:  va returna 1 daca "stare" este stare finala, altfel va returna 0
  */
 int esteStareFinala(int stare, int stariFinale[100], int numarStariFinale)
 {
